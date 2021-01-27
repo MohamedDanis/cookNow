@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/cooking.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0307df3f78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -46,39 +47,42 @@
     <section class="cuisine-sec" id="Cuisine">
         <h1 class="cuisine-heading">Choose Your Style</h1>
         <div class="card-grid">
-            <div class="card">
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
                 <h1>Indian<span><img src="img/indian-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta">Get your course</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Chinese<span><img src="img/chinese-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta">Get your course</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
                 <h1>French<span><img src="img/french-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta">Get your course</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
                 <h1>Spanish<span><img src="img/spanish-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta">Get your course</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Arabian<span><img src="img/arabian-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta">Get your course</button>
             </div>
             
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-duration="2000">
                 <h1 class="jap-heading">Japanese<span><img src="img/japan-food.svg" class="cuisine-logo"></span></h1>
                 <button class="hero-cta cuisine-cta wobble-hor-top">Get your course</button>
             </div>
             
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
