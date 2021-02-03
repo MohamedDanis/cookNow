@@ -270,13 +270,14 @@ header{
     font-family: 'Monda', sans-serif;
     text-align: center;
     font-size: 5rem;
-    color: black;
+    color: black; 
 }
 .card-grid{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
   
 }
 .card{
