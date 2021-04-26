@@ -1,20 +1,18 @@
 var toggler = document.getElementById('toggler')
-var menuBar = document.getElementById('menu-bar')
+var menuBar = document.querySelector('.nav-list')
 var cuisineSec = document.getElementById('cuisineSec')
+var load=document.querySelector('.loader')
 
-toggler.addEventListener('click',()=>{
-    if(menuBar.classList.contains('menu-show')){
-        menuBar.classList.remove('menu-show')
-        menuBar.classList.add('menu-hide')
-    }else{
-        menuBar.classList.remove('menu-hide')
-        menuBar.classList.add('menu-show')
-        menuBar.classList.add('swing-in-top-bck')
-    }
-    
+window.addEventListener('load', function(){
+    load.classList.add('disappear');
 })
-
+toggler.addEventListener('click',()=>{
+    toggler.classList.toggle('animate')
+    menuBar.classList.toggle('navlist-show')
+    // menuBar.classList.toggle('swing-in-top-bck')
+    // menuBar.classList.toggle('ul-show')
+})
 cuisineSec.addEventListener('click',()=>{
-    menuBar.classList.remove('menu-show')
-    menuBar.classList.add('menu-hide')
+    menuBar.classList.remove('navlist-show')
+    toggler.classList.remove('animate')
 })

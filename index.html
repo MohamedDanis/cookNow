@@ -10,28 +10,27 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <div class="loader">
+        <lottie-player src="https://assets5.lottiefiles.com/datafiles/XpFCWApEzLI29va/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
     <header>
         <nav class="nav-bar">
             <div class="logo"><h1>cookNow</h1></div>
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#Cuisine" class="nav-link">Cuisine</a></li>
+                    <li class="nav-item"><a href="#Cuisine" class="nav-link" id="cuisineSec">Cuisine</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item cta-par"><a href="#" class="nav-link" id="">Buy the course</a></li>
                 </ul>
             </div>
-            <div class="toggler"><i class="fas fa-bars ham" id="toggler"></i></div>
+            <div class="hamburger" id="toggler">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             
         </nav>
-        <div class="menu-hide" id="menu-bar">
-                <ul class="navlist">
-                    <li class="navitem"><a href="#" class="navlink">Home</a></li>
-                    <li class="navitem"><a href="#Cuisine" class="navlink" id="cuisineSec">Cuisine</a></li>
-                    <li class="navitem"><a href="#" class="navlink">About</a></li>
-                    <li class="navitem cta-par"><a href="#" class="navlink">Buy the course</a></li>
-                </ul>
-        </div>
     </header>
     <section class="hero-section">
         <div class="text-section">
@@ -79,6 +78,7 @@
             
         </div>
     </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
     <script>
